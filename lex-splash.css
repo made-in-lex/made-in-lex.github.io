@@ -1,0 +1,44 @@
+/*Background Image*/
+
+html {
+	background-color: #232364;
+	border: 20px solid #f6b73a;
+}
+
+/*Page Structure*/
+
+.content {
+	width: 80%;
+	text-align: center;
+	margin: auto;
+	position: relative;
+  	top: 50%;
+  	transform: translateY(-50%);
+}
+
+.logo {
+	width: 90%;
+	margin-bottom: 5%;
+}
+			
+/*Type & Link Styling*/
+
+p {
+	color: #FFFFFF;
+	font-family: 'Karla', sans-serif;
+	font-size: 24px;
+	text-weight: normal;
+}
+			
+a {
+	color: #f6b73a;
+	text-decoration: none;
+	-webkit-transition: color 0.3s ease;
+	-moz-transition: color 0.3s ease;
+	-o-transition: color 0.3s ease;
+	transition: color 0.3s ease;
+}
+			
+a:hover {
+	color: #FFFFFF;
+}
