@@ -1,24 +1,28 @@
 /*Background Image*/
 
 html {
-	background-color: #232364;
-	border: 20px solid #f6b73a;
+	background: url(images/lex-back.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 
-/*Page Structure*/
+/*Default Page Structure*/
 
 .content {
 	width: 80%;
 	text-align: center;
 	margin: auto;
-	position: relative;
-  	top: 50%;
-  	transform: translateY(-50%);
+	margin-top: 10%;
 }
 
 .logo {
-	width: 90%;
-	margin-bottom: 5%;
+	height: 270px;
+	width: 800px;
+	background: url(images/logo-horz.svg) no-repeat;
+	background-size: 100%;
+	margin: auto;
 }
 			
 /*Type & Link Styling*/
@@ -27,12 +31,12 @@ p {
 	color: #FFFFFF;
 	font-family: 'Karla', sans-serif;
 	font-size: 24px;
-	text-weight: normal;
+	line-height: 29px;
+	font-weight: normal;
 }
 			
 a {
-	color: #f6b73a;
-	text-decoration: none;
+	color: #FFFFFF;
 	-webkit-transition: color 0.3s ease;
 	-moz-transition: color 0.3s ease;
 	-o-transition: color 0.3s ease;
@@ -40,5 +44,47 @@ a {
 }
 			
 a:hover {
-	color: #FFFFFF;
+	color: #f6b73a;
+}
+
+/*The Responsive Bit*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+	p {
+		font-size: 20px;
+	}
+
+	.logo {
+		margin-top: 30%;
+		height: 220px;
+		width: 300px;
+		background: url(images/logo-vert.svg) no-repeat;
+		background-size: 100%;
+	}
+}
+
+@media (min-width: 480px) and (max-width: 800px) {
+	p {
+		font-size: 20px;
+	}
+
+	.logo {
+		margin-top: 30%;
+		height: 300px;
+		width: 400px;
+		background: url(images/logo-vert.svg) no-repeat;
+		background-size: 100%;
+	}
+}
+
+@media (min-width: 800px) and (max-width: 1024px) {
+	p {
+		font-size: 24px;
+	}
+
+	.logo {
+		height: 200px;
+		width: 600px;
+		background-size: 100%;
+	}
 }
