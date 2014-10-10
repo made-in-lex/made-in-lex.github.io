@@ -49,7 +49,9 @@ a:hover {
 
 /*The Responsive Bit*/
 
-@media screen and (min-width: 320px) and (max-width: 640px) {
+
+
+@media screen and (max-width: 640px) {
 	p {
 		font-size: 20px;
 	}
@@ -62,29 +64,4 @@ a:hover {
 		background-size: 100%;
 	}
 }
-
-@media screen and (min-width: 640px) and (max-width: 860px) {
-	p {
-		font-size: 20px;
-	}
-
-	.logo {
-		margin-top: 20%;
-		height: 300px;
-		width: 400px;
-		background: url(images/logo-vert.svg) no-repeat;
-		background-size: 100%;
-	}
-}
-
-@media screen and (min-width: 860px) and (max-width: 1200px) {
-	p {
-		font-size: 24px;
-	}
-
-	.logo {
-		height: 200px;
-		width: 600px;
-		background-size: 100%;
-	}
 }
