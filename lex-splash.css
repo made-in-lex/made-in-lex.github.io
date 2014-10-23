@@ -50,7 +50,6 @@ a:hover {
 /*The Responsive Bit*/
 
 
-
 @media screen and (max-width: 640px) {
 	p {
 		font-size: 20px;
@@ -63,5 +62,4 @@ a:hover {
 		background: url(images/logo-vert.svg) no-repeat;
 		background-size: 100%;
 	}
-}
 }
