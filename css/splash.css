@@ -1,7 +1,7 @@
 /*Background Image*/
 
 html {
-	background: url(images/lex-back.jpg) no-repeat center center fixed; 
+	background: url(../images/lex-back.jpg) no-repeat center center fixed; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -20,7 +20,7 @@ html {
 .logo {
 	height: 270px;
 	width: 800px;
-	background: url(images/logo-horz.svg) no-repeat;
+	background: url(../images/logo-horz.svg) no-repeat;
 	background-size: 100%;
 	margin: auto;
 }
@@ -59,7 +59,7 @@ a:hover {
 		margin-top: 30%;
 		height: 220px;
 		width: 300px;
-		background: url(images/logo-vert.svg) no-repeat;
+		background: url(../images/logo-vert.svg) no-repeat;
 		background-size: 100%;
 	}
 }
