@@ -1,25 +1,21 @@
 /*Background Image*/
 
 html {
-	background: url(../images/lex-back.jpg) no-repeat center center fixed; 
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+	background: #232364;
 }
 
 /*Default Page Structure*/
 
 .content {
-	width: 80%;
+	max-width: 600px;
 	text-align: center;
 	margin: auto;
-	margin-top: 10%;
+	padding: 8em 1em;
 }
 
 .logo {
-	height: 270px;
-	width: 800px;
+	height: 10em;
+	width: 30em;
 	background: url(../images/logo-horz.svg) no-repeat;
 	background-size: 100%;
 	margin: auto;
@@ -36,7 +32,9 @@ p {
 }
 			
 a {
-	color: #FFFFFF;
+	color: #F6B73A;
+	text-decoration: none;
+	border-bottom: 2px #F6B73A;
 	-webkit-transition: color 0.3s ease;
 	-moz-transition: color 0.3s ease;
 	-o-transition: color 0.3s ease;
@@ -44,21 +42,25 @@ a {
 }
 			
 a:hover {
-	color: #f6b73a;
+	color: #FFFFFF;
+	border-bottom: 2px #FFFFFF;
 }
 
 /*The Responsive Bit*/
 
 
-@media screen and (max-width: 640px) {
+@media only screen and (max-width: 600px), only screen and (max-device-width: 600px) {
 	p {
-		font-size: 20px;
+		font-size: 26px;
+	}
+
+	.content {
+		padding: 5em 1em;
 	}
 
 	.logo {
-		margin-top: 30%;
-		height: 220px;
-		width: 300px;
+		height: 14em;
+		width: 17em;
 		background: url(../images/logo-vert.svg) no-repeat;
 		background-size: 100%;
 	}
