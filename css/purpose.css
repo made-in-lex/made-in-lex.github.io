@@ -1,69 +1,41 @@
 /*Structure*/
 
-body {
-	margin-left: 0px;
-	margin-right: 0px;
-	margin-bottom: 0px;
+html {
 	background-color: #ffffff;
 	font-family: 'Karla', sans-serif;
 	text-decoration: none;
 }
 
-.wrapper {
+body {
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+
+.wrapper, .foot-wrap {
 	max-width: 700px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 120px;
+	margin: auto;
+	padding: 4em 1.5em;
 }
 
 footer {
-	background-color: rgba(0,0,0,1);
-	width: 100%;
-	margin-top: 50px;
-}
-
-.foot-wrap {
-	width: 700px;
-	margin-left: auto;
-	margin-right: auto;
-	padding-top: 50px;
-}
-
-.logo {
-	width: 50px;
-	margin-top: 50px;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.npossible {
-	width: 100%;
-	margin-bottom: 50px;
+	background: #232364;
 }
 
 /*Type Styles*/
 
 ::selection {
-	background: #6de1c5;
+	background: #F6B73A;
 }
 
 a::selection {
-	color: #000000;
-}
-
-h1 {
-	font-weight: normal;
-	color: #6de1c5;
-	font-size: 42px;
-	line-height: 40px;
-	-webkit-font-smoothing: antialiased;
-	text-rendering: optimizeLegibility;
-	margin-bottom: 10px;
+	color: #232364;
 }
 
 h2 {
+	color: #232364;
 	font-weight: 700;
-	font-size: 22px;
+	font-size: 28px;
 	margin-top: 30px;
 }
 
@@ -74,19 +46,29 @@ h3 {
 
 p, h3 {
 	font-family: 'Merriweather', serif;
+	color: #232364;
 	font-size: 20px;
-	line-height: 30px;
+	line-height: 32px;
 }
 
 .foot-wrap p {
+	color: #F6B73A;
 	font-family: 'Karla', sans-serif;
-	color: white;
-	font-size: 18px;
+	font-size: 24px;
+	line-height: 32px;
+}
+
+.foot-wrap a {
+	color: #ffffff;
+}
+
+.foot-wrap a:hover {
+	color: #F6B73A;
 }
 
 a {
 	text-decoration: none;
-	color: #6de1c5;
+	color: #F6B73A;
 	-webkit-transition: color 0.3s ease;
 	-moz-transition: color 0.3s ease;
 	-o-transition: color 0.3s ease;
@@ -94,20 +76,57 @@ a {
 }
 
 a:hover {
-	color: #000000;
-}
-
-.foot-wrap a:hover {
-	color: #ffffff;
+	color: #232364;
 }
 
 li {
+	color: #232364;
 	font-size: 18px;
 	line-height: 25px;
 	margin-bottom: 2px;
 }
 
-time {
-	font-size: 13px;
-	color: rgba(181,196,199,1);
+/*Images*/
+
+.logo {
+	width: 70%;
+	padding-bottom: 2em;
+}
+
+/*Responsive-bility*/
+
+@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
+
+.logo {
+	width: 100%;
+}
+
+h2 {
+	font-size: 24px;
+	margin-top: 28px;
+}
+
+p, h3 {
+	font-size: 18px;
+	line-height: 30px;
+}
+
+li {
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.wrapper, .foot-wrap {
+	padding: 2em;
+}
+
+.foot-wrap p {
+	font-size: 20px;
+	line-height: 28px;
+}
+
+.logo {
+	padding-bottom: 1em;
+}
+
 }
